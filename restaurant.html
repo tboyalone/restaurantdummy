@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Delicious Bites Menu Restaurant</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="restaurant.css">  
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                font-size: 15px;
+                background-color: #f3f5ebfb;
+                margin: 0;
+                padding: 20px;
+                background-image: url('others/Lagos-780x585.jpg');
+                background-size: cover;
+            }
+            .nav-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
+                background-color: #8e6fe2;
+                margin-bottom: 10px;
+                margin-top: 5px;
+                height: 30px;
+                border-radius: 5px;
+                opacity: 0.9;
+            }
+            .nav-heading {
+                color: white;
+                font-size: 24px;
+            }
+            .nav-list {
+                list-style: none;
+                display: flex;
+                gap: 20px;
+            }
+            .nav-list-item {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+            .nav-list-item:hover {
+                text-decoration: underline;
+                color: #f3f5ebfb;
+                font-weight: bold;
+            }
+            .menu-container-all{
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                padding: 20px;
+                background-color: #fcf9f9;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                align-items: center;
+                opacity: 0.9;
+            }
+            .menu-container-appetizers-list,
+            .menu-container-main-courses-list,
+            .menu-container-desserts-list {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .menu-container-appetizers, 
+            .menu-container-main-courses, 
+            .menu-container-desserts {
+                background-color: #ddf092fb;
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                align-items: center;
+            }
+            .menu-container-appetizers-list{
+                list-style: none;
+                padding: 0;
+            }
+            .menu-item-description {
+                margin-right: 20px;
+                width: 400px;
+             
+            }
+            .menu-item-image {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                border-radius: 5px;
+                padding: 10px;
+
+            }
+            .menu-item-description-all {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .menu-item-description-all:hover,  .menu-item-image:hover {
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: transform 0.3s ease;
+            }
+           .menu-container-appetizers-list-actual{
+            width: 450px;
+           }
+           
+           .main-container-message{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: right;
+            text-align: right;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: hwb(0 95% 2%);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0.9;
+           } 
+           h1, h2 {
+            color: #333;
+            text-align: center;
+           }
+           .footer-message{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #aca9b4;
+            border-radius: 5px;
+            color: white;
+            opacity: 0.5;
+           }
+           .footer-text-message{
+            color: #4a08a7;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #fcf9f9;
+           }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <h1 class="nav-heading">Delicious Bites Menu</h1>
+                <ul class="nav-list">
+                    <li><a class="nav-list-item" href="audio-video/index.html">Home</a></li>
+                    <li><a class="nav-list-item" href="about.html">About</a></li>
+                    <li><a class="nav-list-item" href="menu.html">Menu</a></li>
+                    <li><a class="nav-list-item" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                <div class="main-container-message">
+                    <h2>Welcome to Delicious Bites!</h2>
+                    <p>Experience the best culinary delights in town.</p>
+                    <p>Our menu is crafted with love and passion for food.</p>
+                    <p>Join us for a memorable dining experience.</p>
+                </div>
+            <div class="menu-container-all">
+            <div class="menu-container-appetizers">
+                <h1>Delicious Bites Menu</h1>
+                <h2>Appetizers</h2>
+                <ul class="menu-container-appetizers-list">
+                    <li class="menu-container-appetizers-list-actual">
+                        <div class="menu-item-image">
+                            <img src="images/restaurant/Caprese-Salad.jpeg" alt="Caprese Salad">
+                        </div>
+                        <div class="menu-item-description-all">
+                            <strong>Caprese Salad</strong>
+                            <p class="menu-item-description">Fresh tomatoes, mozzarella, and basil drizzled with balsamic glaze.</p>
+                        </div>
+                    </li>
+                    <!-- Adding two more appetizer items with descriptions -->
+                    <li>
+                        <div class="menu-item-image">
+                            <img src="images/restaurant/Bruschetta.jpeg" alt="Bruschetta">
+                        </div>
+                        <div class="menu-item-description-all">
+                        <strong>Bruschetta</strong>
+                        <p class="menu-item-description">Toasted bread topped with diced tomatoes, garlic, and basil.</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="menu-item-image">
+                            <img src="images/restaurant/Stuffed-Mushrooms.jpeg" alt="Stuffed Mushrooms">
+                        </div>
+                        <div class="menu-item-description-all">
+                        <strong>Stuffed Mushrooms</strong>
+                        <p class="menu-item-description">Mushrooms stuffed with cheese and herbs, baked to perfection.</p>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+           <div class="menu-container-main-courses">
+                <h2>Main Courses</h2>
+            <ul class="menu-container-main-courses-list">
+                <li class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="images/restaurant/Grilled-Salmon.jpeg" alt="Grilled Salmon">                    
+                    </div>
+                    <div class="menu-item-description-all">
+                    <strong>Grilled Salmon</strong>
+                    <p class="menu-item-description">Salmon fillet seasoned and grilled to perfection, served with lemon butter sauce.</p>
+                    </div>
+                    
+                </li>
+                <!-- Adding two more main course items with descriptions -->
+                <li>
+                    <div class="menu-item-image">
+                        <img src="images/restaurant/Tomato-Basil-Soup.jpeg" alt="Tomato Basil Soup">
+                    </div>
+                    <div class="menu-item-description-all">
+                    <strong>Tomato Basil Soup</strong>
+                    <p class="menu-item-description">
+                        Rich tomato soup with fresh basil and a hint of cream.
+                    </p>
+                    </div>
+                    
+                </li>
+                <li>
+                    <div class="menu-item-image">
+                        <img src="images/restaurant/Chicken-Alfredo.jpeg" alt="Chicken Alfredo">
+                    </div>
+                    <div class="menu-item-description-all">
+                    <strong>Chicken Alfredo</strong>
+                    <p class="menu-item-description">
+                        Creamy fettuccine pasta with grilled chicken and parmesan cheese.</p>
+                    </p>
+                    </div>
+                    
+                </li>
+            </ul>
+           </div>
+            <div class="menu-container-desserts">
+                <h2>Desserts</h2>
+                <ul class="menu-container-desserts-list">
+                    <li>
+                        <div class="menu-item-image">
+                            <img src="images/restaurant/Chocolate-Fondue.jpeg" alt="chocolate Fondue">
+                        </div>
+                        <div class="menu-item-description-all">
+                            <strong>Chocolate Fondue</strong>
+                            <p class="menu-item-description">Assorted fruits and marshmallows served with rich chocolate fondue.</p>
+                        </div>
+                        
+                    </li>
+                    <!-- Adding two more dessert items with descriptions -->
+                    <li>
+                        <div class="menu-item-image">
+                            <img src="images/restaurant/Mango-Smoothie.jpeg" alt="Mango Smoothie">
+                        </div>
+                        <div class="menu-item-description-all">
+                            <strong>Mango Smoothie</strong>
+                            <p class="menu-item-description">Refreshing mango smoothie blended with yogurt and honey.</p>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <div class="menu-item-image">
+                            <img src="images/restaurant/Tiramisu.jpeg" alt="Tiramisu">
+                        </div>
+                        <div class="menu-item-description-all">
+                            <strong>Tiramisu</strong>
+                            <p class="menu-item-description">Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.</p>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-message">
+                <p><a class="footer-text-message" href="restaurant.html">Contact us for reservations</a></p>
+            </div>
+            </div>
+        </main>
+    </body>
+</html>
